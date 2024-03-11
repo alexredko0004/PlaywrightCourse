@@ -2,7 +2,7 @@ import { test, expect, chromium } from '@playwright/test';
 import {isDesktopViewport} from "../data/utils/isDesktop.js"
  
  //Test_1
- test.only('add to cart', async ({ page }) => {
+ test('add to cart', async ({ page }) => {
     await page.goto('/');
     await page.pause()
     const addToBasketButton = page.locator('[data-qa="product-button"]').first();
