@@ -6,7 +6,8 @@
   "scripts": {
     "test": "playwright test --config=playwright.config.js",
     "test2": "playwright test --config=playwright-study.config.js",
-    "course:run": "playwright test --config=playwright-study.config.js --headed"
+    "course:run": "playwright test --config=playwright-study.config.js --headed",
+    "test:ci": "playwright test"
   },
   "author": "",
   "license": "ISC",
