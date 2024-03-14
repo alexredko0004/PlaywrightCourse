@@ -35,4 +35,5 @@ test ('My account using cookie injection and mocking network request', async({pa
     await myAccount.visit();
     await myAccount.waitForPageHeading();
     await myAccount.waitForErrorMessage();
+    await page.close()
 })
