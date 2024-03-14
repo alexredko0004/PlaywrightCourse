@@ -6,7 +6,7 @@ jobs:
   playwrighttests:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.42.1-focal
+      image: mcr.microsoft.com/playwright:v1.41.0-focal
       env:
         USERNAME1: ${{ secrets.USERNAME1 }}
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
@@ -15,7 +15,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Run tests
         run: |
-          set -e
           echo: "Start the shopping store app"
           chmod +x ./shopping-store-linux-amd64 && ./shopping-store-linux-amd64 &
           echo: "Install dependencies from lockfile"
