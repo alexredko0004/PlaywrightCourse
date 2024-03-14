@@ -4,7 +4,7 @@ import {isDesktopViewport} from "../data/utils/isDesktop.js"
  //Test_1
  test('add to cart', async ({ page }) => {
     await page.goto('/');
-    await page.pause()
+    //await page.pause()
     const addToBasketButton = page.locator('[data-qa="product-button"]').first();
     const basketCounter = page.locator('[data-qa="header-basket-count"]');
     // const checkoutLink = page.getByRole('link',{name:'Checkout'})
